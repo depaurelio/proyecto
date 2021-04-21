@@ -1,0 +1,25 @@
+<html>
+<marquee><head>Todos tus datos que ingreses no se comparten</head>
+</marquee>
+<link rel="stylesheet" type="text/css" href="estilo_ventas">
+<body>
+     <center><h1>BIENVENIDO A LA PAGINA DE VENTAS</h1></center>
+	 
+     <center><div class=""><form action="ventas.php" method="post" ><br><br><br>
+         <label for="nom">Ingresa tu nombre:</label>
+         <input type="text" name="nombre" placeholder="write here" id="nom" value="<?php if(isset($nombre)) echo $nombre?>">
+		 <label for="dir">Ingresa tu direccion:</label>
+         <input type="text" name="direccion" placeholder="write here" id="dir" value="<?php if(isset($direccion)) echo $direccion?>">
+		 <label for="pren">Ingresa la prenda:</label>
+         <input type="text" name="prenda" placeholder="write here" id="pren" value="<?php if(isset($prenda)) echo $prenda?>"><br><br>
+		  <center><input type="submit" name="procesar" value="Enviar datos"></center></div>
+	 </center>
+
+     </form>
+ 
+ 
+ 
+</body>
+
+</html>
+
